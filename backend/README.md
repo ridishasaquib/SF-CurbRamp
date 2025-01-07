@@ -2,7 +2,6 @@
 
 This folder powers the brains of the SF Curb Ramp project. It handles data processing, serves the frontend, and ensures everything runs like clockwork.
 
-## What's Inside
 - **`Map_App.py`:** The entry point of the Flask application.
 - **`requirements.txt`:** All the Python dependencies you'll need. (Install them with `pip install -r requirements.txt`—you’ll feel like a hacker.)
 - **`utils/`:** 
