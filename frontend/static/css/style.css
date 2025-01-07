@@ -1,0 +1,108 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-image {
+    background-image: url('/static/images/nighsf.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.title-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    margin-top: 30px;
+    margin-bottom: 10px;
+    animation: sunrise 3s ease-in-out forwards;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 5rem; 
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+.logo {
+    height: 80px; 
+    width: auto;
+    animation: fadeIn 2s ease-in-out forwards; 
+}
+
+/* Headline Fade In */
+.headline {
+    font-family: 'Body Grotesque Fit', sans-serif; 
+    font-size: 2rem;
+    font-weight: bold; 
+    color: white; 
+    position: absolute;
+    right: 50px; 
+    bottom: 150px;
+    text-align: right;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes sunrise {
+    0% {
+        transform: translateY(150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.get-started {
+    display: inline-block;
+    position: absolute;
+    right: 50px; 
+    bottom: 50px;
+    padding: 15px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white; 
+    border: 3px solid white;
+    background: none;
+    border-radius: 0;
+    opacity: 0;
+    animation: fadeIn 3.5s ease-in-out forwards;
+    animation-delay: 2s;
+    transition: all 0.3s ease;
+}
+
+.get-started:hover {
+    background: #c65102; 
+    color: white; 
+}
+
+
+
+
