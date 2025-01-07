@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Map</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #292929; /* Dark background */
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Logo and Title */
+        .logo-title {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo-title img {
+            height: 80px;
+            margin-right: 15px;
+        }
+
+        .logo-title h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: white;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            margin-right: 35px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .nav-links a {
+            color: #F89880; /* Salmon color */
+            text-decoration: none;
+            font-size: 2rem;
+        }
+
+        /* Legend Button */
+        .legend-button {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            background-color: salmon; /* Button color */
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            border-radius: 0; /* No edges */
+            text-decoration: none; /* Remove underline */
+            max-width: 200px;
+        }
+
+        .legend-button:hover {
+            background-color: #f08080; /* Slightly lighter on hover */
+        }
+
+        /* Map Section */
+        iframe {
+            display: block;
+            width: 90%;
+            height: 600px;
+            margin: 30px auto;
+            border: none;
+            border-radius: 10px; /* Optional: Slight rounding for a clean look */
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Section with Logo and Navigation -->
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <!-- Logo and Title -->
+        <div class="logo-title">
+            <img src="/static/images/logo.png" alt="Logo">
+            <h1>SF CurbRamp</h1>
+        </div>
+        <!-- Navigation Links -->
+        <div class="nav-links">
+            <a href="/search">Back to Search</a>
+            <a href="/">Home</a>
+        </div>
+    </div>
+
+    <!-- Filtered Map Section -->
+    <iframe src="{{ map_file }}" title="Filtered Map"></iframe>
+
+    <!-- Legend Button -->
+    <a href="/legend" class="legend-button">Legend</a>
+</body>
+</html>
+
