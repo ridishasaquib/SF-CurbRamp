@@ -9,9 +9,10 @@ Built using **Flask**, **Folium**, **Pandas**, and **HTML/CSS**.
 ---
 
 ## Features
-- **Search for curb ramps** by location using an interactive search tool.
-- View ramp conditions (e.g., missing ramps, poorly maintained ramps) on a **map with visual markers**.
-- Access an **About page** and **Legend page** for additional project context.
+- Search functionality to locate curb ramps by street or area.
+- Interactive map displaying ramp conditions (missing, poorly maintained, and good condition).
+- Informative "About" and "Legend" pages for additional context.
+- Highlight areas in need of improvement to encourage inclusivity.
 
 ---
 
@@ -26,13 +27,16 @@ project-folder/
 │   ├── search.html        # Search functionality
 │   ├── about.html         # About the project
 │   ├── legend.html        # Map legend
+│   ├── map.html           # Filtered map page
 ├── static/                # Frontend: Static assets
 │   ├── css/
 │   │   ├── style.css      # Main styles for the application
+│   │   ├── search-style.css  # Styles for the search page
 │   ├── images/
 │       ├── logo.png       # Project logo
 │       ├── streetsf.jpeg  # Image used in the "About" page
+│       ├── bridge.jpeg    # Image used in the "About" page
+│       ├── nighsf.jpg     # Night view of SF
 ├── Curb_Ramps.csv         # Backend: Dataset
-├── requirements.txt       # Backend: Dependencies
+├── requirements.txt       # Backend: Python dependencies
 ├── README.md              # Documentation
-
