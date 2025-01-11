@@ -21,22 +21,13 @@ Built using **Flask**, **Folium**, **Pandas**, and **HTML/CSS**.
 ```plaintext
 project-folder/
 ├── Map_App.py                 # Backend: Flask application
-├── MapProject.py               # Backend: Utility functions
-├── templates/             # Frontend: HTML files
-│   ├── index.html         # Homepage
-│   ├── search.html        # Search functionality
-│   ├── about.html         # About the project
-│   ├── legend.html        # Map legend
-│   ├── map.html           # Filtered map page
-├── static/                # Frontend: Static assets
-│   ├── css/
-│   │   ├── style.css      # Main styles for the application
-│   │   ├── search-style.css  # Styles for the search page
-│   ├── images/
-│       ├── logo.png       # Project logo
-│       ├── streetsf.jpeg  # Image used in the "About" page
-│       ├── bridge.jpeg    # Image used in the "About" page
-│       ├── nighsf.jpg     # Night view of SF
-├── Curb_Ramps.csv         # Backend: Dataset
-├── requirements.txt       # Backend: Python dependencies
-├── README.md              # Documentation
+├── MapProject.py              # Backend: Utility functions
+├── templates/                 # Frontend: HTML templates for different pages
+│   ├── Contains all HTML files (e.g., index.html, search.html, about.html, legend.html, map.html)
+├── static/                    # Frontend: Static assets (CSS, images, etc.)
+│   ├── css/                   # Stylesheets for the application
+│   ├── images/                # Image assets (e.g., logo, map images)
+├── Curb_Ramps.csv             # Dataset for ramp data
+├── requirements.txt           # Python dependencies for the project
+├── README.md                  # Project documentation
+
