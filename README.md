@@ -20,8 +20,8 @@ Built using **Flask**, **Folium**, **Pandas**, and **HTML/CSS**.
 
 ```plaintext
 project-folder/
-├── app.py                 # Backend: Flask application
-├── utils.py               # Backend: Utility functions
+├── Map_App.py                 # Backend: Flask application
+├── MapProject.py               # Backend: Utility functions
 ├── templates/             # Frontend: HTML files
 │   ├── index.html         # Homepage
 │   ├── search.html        # Search functionality
